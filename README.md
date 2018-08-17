@@ -7,7 +7,13 @@ Nesta primeira parte vamos utilizar as ferramentas Vagrant e Puppet para prover 
 
 Use the following steps to run the application locally:
 
-1. Execute full Maven build to create the `target/JavaHelloWorldApp.war` file:
+1. Primeiro instalaremos o VirtualBox e o Vagrant:
     ```bash
-    $ mvn clean install
+    $ sudo apt install virtualbox
+    $ sudo apt install vagrant
+    ```
+
+2. Logo apos a instalacao iremos adicionar a imagem de Template necessaria para iniciar as maquinas virtuais.O Vagrant trata estas imagens como BOX, no nosso caso as imagens sao disponibilizadas pelo proprio Vagrant, sendo ela de um Linux Ubuntu 12.04 32 Bits:
+    ```bash
+    $ vagrant box add hashicorp/precise32
     ```
