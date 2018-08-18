@@ -22,8 +22,6 @@ Use the following steps to run the application locally:
 
     ```bash
     $ git clone https://github.com/rvneves/GoDevOps.git
-    ```
-    ```bash
     $ cd GoDevOps
     $ sudo vagrant provision mserv
     $ sudo vagrant up mserv
