@@ -13,7 +13,7 @@ Vou usar o Linux  Ubuntu como sistema operacional, os mesmo arquivos foram testa
     $ sudo apt install vagrant
     ```
 
-2. Logo após a instalação iremos adicionar a imagem de ‘Template’ necessária para iniciar as máquinas virtuais.O Vagrant trata estas imagens como ‘BOX’, no nosso caso as imagens são disponibilizadas pelo próprio Vagrant, sendo ela de um Linux Ubuntu 12.04 32 Bits:
+2. Logo após a instalação iremos adicionar a imagem de  `Template` necessária para iniciar as máquinas virtuais.O Vagrant trata estas imagens como `BOX`, no nosso caso as imagens são disponibilizadas pelo próprio Vagrant, sendo ela de um Linux Ubuntu 12.04 32 Bits:
     ```bash
     $ sudo vagrant box add hashicorp/precise32
     ```
