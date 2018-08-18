@@ -25,12 +25,8 @@ Use the following steps to run the application locally:
     ```
     ```bash
     $ cd GoDevOps
-    ```
-    ```bash
     $ sudo vagrant provision mserv
-    ```
-    ```
-    ```bash
     $ sudo vagrant up mserv
     ```
+    
     
