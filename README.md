@@ -15,5 +15,22 @@ Use the following steps to run the application locally:
 
 2. Logo apos a instalacao iremos adicionar a imagem de Template necessaria para iniciar as maquinas virtuais.O Vagrant trata estas imagens como BOX, no nosso caso as imagens sao disponibilizadas pelo proprio Vagrant, sendo ela de um Linux Ubuntu 12.04 32 Bits:
     ```bash
-    $ vagrant box add hashicorp/precise32
+    $ sudo vagrant box add hashicorp/precise32
     ```
+    
+3. Agora vamos baixar os arquivos de configuraçao do GitHub e iniciar o Vagrant:
+
+    ```bash
+    $ git clone https://github.com/rvneves/GoDevOps.git
+    ```
+    ```bash
+    $ cd GoDevOps
+    ```
+    ```bash
+    $ sudo vagrant provision mserv
+    ```
+    ```
+    ```bash
+    $ sudo vagrant up mserv
+    ```
+    
