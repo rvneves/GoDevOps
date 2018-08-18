@@ -4,7 +4,7 @@ Este projeto tem por objetivo montar um ambiente com melhores práticas DevOps.
 
 Nesta primeira parte vamos utilizar as ferramentas Vagrant e Puppet para prover de forma automática VM,s com aplicação WEB rodando no Tomcat7. 
  
-Vou usar o Linux  Ubuntu como sistema operacional, os mesmo arquivos foram testados no Windows obtendo o mesmo resulta. Nesta primeira parte estamos utilizando Vagrant e Puppet para padronizar a entrega de VM's. As ferramentas utilizadas foram escolhidas por melhor se adaptarem ao ambiente computacional disponível.  Nos próximos materiais vamos abordar práticas de integração contínua neste ambiente. 
+Vou usar o Linux  Ubuntu como sistema operacional, os mesmo arquivos foram testados no Windows obtendo o mesmo resultado. Nesta primeira parte estamos utilizando Vagrant e Puppet para padronizar a entrega de VM's. As ferramentas utilizadas foram escolhidas por melhor se adaptarem ao ambiente computacional disponível.  Nos próximos materiais vamos abordar práticas de integração contínua neste ambiente. 
 
 
 1. Primeiro instalaremos o VirtualBox e o Vagrant:
