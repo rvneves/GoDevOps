@@ -18,7 +18,7 @@ Vou usar o Linux  Ubuntu como sistema operacional, os mesmo arquivos foram testa
     $ sudo vagrant box add hashicorp/precise32
     ```
     
-3. Agora vamos baixar os arquivos de configuraçao do GitHub e iniciar o Vagrant:
+3. Agora vamos baixar os arquivos de configuraçao do GitHub e iniciar o Vagrant.
 
     ```bash
     $ git clone https://github.com/rvneves/GoDevOps.git
@@ -28,4 +28,20 @@ Vou usar o Linux  Ubuntu como sistema operacional, os mesmo arquivos foram testa
     ```
 
     
-    
+   4. O script disponibilizado provisiona uma VM com TomCat7, Mave e Git. Nesta primeira parte nosso objetivo é disponibilizarmos uma VM de forma automática com os componentes necessários para rodar nossa aplicação web. Agora vamos fazer o deploy da aplicação de forma manual apenas para teste, no próximo post vamos automatizar o deploy de nossa aplicação.
+  
+
+	```bash
+$sudo vagrant ssh mserv
+$git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello
+$cd boxfuse-sample-java-war-hello
+$mvn package
+$sudo cp target/hello-1.0.war /var/lib/tomcat7/webapps/
+	```
+
+  5. Nossa aplicação está disponível e pode ser acessada pelo link http://192.168.33.110:8080/hello-1.0/ ou pelo comando abaixo.
+  
+	```bash
+	$ curl http://192.168.33.110:8080/hello-1.0/
+	```
+
